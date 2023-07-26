@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "build-scan-import-product": "cd nova-components/ScanImportProduct && npm run dev",
+        "build-scan-import-product-prod": "cd nova-components/ScanImportProduct && npm run prod",
+        "build-scan-export-product": "cd nova-components/ScanExportProduct && npm run dev",
+        "build-scan-export-product-prod": "cd nova-components/ScanExportProduct && npm run prod",
+        "build-scan-export": "cd nova-components/ScanExport && npm run dev",
+        "build-scan-export-prod": "cd nova-components/ScanExport && npm run prod",
+        "build-scan-export-products": "cd nova-components/ScanExportProducts && npm run dev",
+        "build-scan-export-products-prod": "cd nova-components/ScanExportProducts && npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "vue": "^3.2.26"
+    }
+}
