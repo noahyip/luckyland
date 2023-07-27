@@ -77,7 +77,7 @@ export default {
     },
     onEnter: function() {
       const axios = require('axios');
-      axios.delete('http://localhost:81/api/products/'+this.product.platNum+";"+this.product.rawData)
+      axios.delete('http://localhost:80/api/products/'+this.product.platNum+";"+this.product.rawData)
             .then()
             .finally(() => this.loading = false)
       this.lastProduct.push({'poNum': this.product.rawData.split(";")[0].substring(2), 'quantity': this.product.rawData.split(";")[2].substring(3)})

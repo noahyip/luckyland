@@ -77,7 +77,7 @@ export default {
     },
     onEnter: function() {
       const axios = require('axios');
-      axios.post('http://localhost:81/api/products', this.product)
+      axios.post('http://localhost:80/api/products', this.product)
             .then()
             .catch(err => console.log(err))
             .finally(() => this.loading = false)
