@@ -25,6 +25,7 @@
         v-model="product.rawData"
         @keypress.enter.prevent
       />
+      <p><b>Total: {{ lastProduct.length }}</b></p>
       <table id="table" class="table w-full">
         <thead>
           <tr>
